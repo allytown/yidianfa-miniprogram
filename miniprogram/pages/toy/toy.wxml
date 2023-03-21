@@ -1,0 +1,27 @@
+<block wx:if="{{toylist ==''}}">
+  <view class="container_no">
+    <view class="loading_box">
+      <view class="loading1">
+        <view class="loading_item1"></view>
+        <view class="loading_item2"></view>
+        <view class="loading_item3"></view>
+        <view class="loading_item4"></view>
+        <view class="loading_item5"></view>
+      </view>
+      <view class="loading_text">加载中...</view>
+    </view>
+  </view>
+</block>
+<block wx:else>
+  <view class="container">
+    <block wx:for="{{toylist}}" wx:key="index">
+      <view class="toycard" data-id="{{item._id}}" bindtap="totoyindex">
+        <image class="eye" src="../../images/eye.png"></image>
+        <view class="viewtimes">{{item.viewtimes}}</view>
+        <view class="toyname">{{item.toyname}}</view>
+        <image class="toy_image" src="../../images/toyline.png"></image>
+      </view>
+    </block>
+    <view class="tip">---没有更多内容---</view>
+  </view>
+</block>

@@ -1,0 +1,19 @@
+<!--pages/api/api.wxml-->
+<view class="container">
+  <view class="box">
+    <view class="weather" bindtap="hefeng">
+      <image src="../../images/hefeng.png" class="he_img"></image>
+      <view class="hhh">
+        <view class="weather_text">和风天气</view>
+        <view class="api">实时天气API</view>
+      </view>
+    </view>
+    <view class="weather" bindtap="baidu">
+      <image src="../../images/baidu.png" class="bai_image"></image>
+      <view class="hhh">
+        <view class="weather_text">百度智能云</view>
+        <view class="api">在线语音合成</view>
+      </view>
+    </view>
+  </view>
+</view>

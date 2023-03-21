@@ -1,0 +1,43 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="welcomecard">
+    <image class="avatar" src="{{avatarUrl}}"></image>
+    <view class="nickname">{{nickName}} 欢迎您！</view>
+    <image class="weather-image" src="../../images/{{now.icon}}.png"></image>
+    <view class="weather-num">{{now.temp}}℃</view>
+  </view>
+  <view class="swiper">
+    <swiper autoplay="ture" interval="5000" duration="500" class="swiper-m">
+      <block wx:for="{{bannerlist}}" wx:key="index">
+        <swiper-item>
+          <image src="{{item.banner_id}}" class="swiper-image" bindtap="tobanner" data-id="{{item._id}}"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="main">
+    <view class="line-1">
+      <view class="tiaowen" bindtap="totiaowen">
+        <view class="word">条文条款</view>
+        <image class="ti-image" src="../../images/tiaowen.png"></image>
+      </view>
+      <view class="toy" bindtap="totoy">
+        <view class="word">实用工具</view>
+        <image class="to-image" src="../../images/toy.png"></image>
+      </view>
+    </view>
+    <view class="line-2">
+      <view class="question" bindtap="toquestion">
+        <view class="word">实用问题</view>
+        <image class="qu-image" src="../../images/question1.png"></image>
+      </view>
+      <view class="shoucang" bindtap="toshoucang">
+        <view class="word">我的收藏</view>
+        <image class="sh-image" src="../../images/shoucang.png"></image>
+      </view>
+    </view>
+  </view>
+  <view class="banben">
+    <image class="V-ban" src="../../images/banben.png"></image>
+  </view>
+</view>

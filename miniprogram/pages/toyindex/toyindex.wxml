@@ -1,0 +1,41 @@
+<block wx:if="{{imageslist == ''}}">
+  <view class="container_no">
+    <view class="loading_box">
+      <view class="loading1">
+        <view class="loading_item1"></view>
+        <view class="loading_item2"></view>
+        <view class="loading_item3"></view>
+        <view class="loading_item4"></view>
+        <view class="loading_item5"></view>
+      </view>
+      <view class="loading_text">加载中...</view>
+    </view>
+  </view>
+</block>
+<block wx:else>
+  <view class="container">
+    <view class="imageBG">
+      <block wx:for="{{imageslist}}" wx:key="index">
+        <view class="kuai">
+          <image class="toyimage" src="{{item}}" data-url="{{item}}" bindtap="tomax"></image>
+        </view>
+      </block>
+    </view>
+    <view class="buttonbox">
+      <view class="button" bindtap="tocopy">
+        <view class="button_text">复制到浏览器</view>
+      </view>
+    </view>
+    <view class="hint">
+      <view class="hint_title">温馨提示</view>
+      <scroll-view scroll-y="true" class="art">
+        <view class="art_text">1.本文档获取方式</view>
+        <view class="art_text">点击上方“复制到浏览器”按钮复制到浏览器地址栏，跳转即可下载。</view>
+        <view class="art_text">2.本文档仅供参考，具体内容请仔细浏览。若无不妥之处且符合自身的需求（或根据自身需求修改之后）进行使用。</view>
+        <view class="art_text">3.若您在浏览文档的过程中发现错误，欢迎您的积极反馈。</view>
+        <view class="art_text">4.由于最多显示两张图片，某些工具文档并未完全展示，想要浏览完整内容请前往下载。</view>
+        <view class="art_text">5.请明确知晓以上问题的存在并自愿承担风险。</view>
+      </scroll-view>
+    </view>
+  </view>
+</block>

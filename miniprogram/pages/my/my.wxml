@@ -1,0 +1,35 @@
+<block wx:if="{{islogin}}">
+  <view class="containers">
+    <image class="logobox" src="../../images/logo.png"></image>
+    <view class="logotext">一典法</view>
+    <button style="width:600rpx" class="login" open-type='getUserProfile' bindtap='getUserInfo'>
+      <view class="wechat-text">授权登录</view>
+    </button>
+    <navigator class="goback" target="miniProgram" open-type="exit">取消登录</navigator>
+  </view>
+</block>
+<block wx:else>
+  <view class="container">
+    <view class="idcard">
+      <image class="avatar" src="{{avatarUrl}}"></image>
+      <view class="right">
+        <view class="nickNm">{{nickName}}</view>
+        <view class="address">{{province}}-{{city}}</view>
+      </view>
+    </view>
+    <view class="menu">
+      <button class="ready_a" style="width:400rpx;height:7vh" open-type="contact">
+        <view class="ready_b">联系客服</view>
+      </button>
+      <button class="ready_a" style="width:400rpx;height:7vh" open-type="feedback">
+        <view class="ready_b">反馈</view>
+      </button>
+      <button class="ready_a" style="width:400rpx;height:7vh" bindtap="toapi">
+        <view class="ready_b">第三方API</view>
+      </button>
+      <button class="ready_a" style="width:400rpx;height:7vh" bindtap="to_aboutus">
+        <view class="ready_b">关于我们</view>
+      </button>
+    </view>
+  </view>
+</block>

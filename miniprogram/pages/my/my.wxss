@@ -1,0 +1,111 @@
+/* pages/my/my.wxss */
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+.idcard{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-image:url(https://7969-yidianfa-4gnyc6a05146f0dc-1305508075.tcb.qcloud.la/backg.png?1621130481);
+  width: 690rpx;
+  height: 400rpx;
+  background-size: cover;
+  z-index: 0;
+}
+.avatar{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 100%;
+  margin-left: 36rpx;
+}
+.right{
+  margin-left: 38rpx;
+}
+.nickNm{
+  font-size: 48rpx;
+  font-family: pingFang-Regular;
+  color: white;
+}
+.address{
+  font-size: 36rpx;
+  font-family: pingFang-Regular;
+  color: white;
+}
+.menu{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 690rpx;
+  height: 60vh;
+  border-radius: 20rpx;
+  margin-top: 26rpx;
+  background-color: white;
+  box-shadow: 0 2px 6px #cccccc;
+}
+.ready{
+  font-family: pingFang-Regular;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  margin-top: 80rpx;
+  border-radius: 10rpx;
+  text-align: center;
+  background-color: rgb(222, 41, 16);
+}
+.ready_a{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 6.4vh;
+  border-radius: 10rpx;
+  background-color: rgb(222, 41, 16);
+}
+.ready_b{
+  color: white;
+  font-family: pingFang-Regular;
+}
+.containers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.logobox {
+  width: 130rpx;
+  height: 130rpx;
+  margin-top: 220rpx;
+}
+
+.logotext {
+  font-size: 60rpx;
+  font-family: pingFang-Regular;
+  margin-top: 34rpx;
+}
+
+.login {
+  display: flex;
+  flex-direction: row;
+  height:88rpx;
+  align-items: center;
+  justify-content: center;
+  background-color: #de2910;
+  border-radius: 44rpx;
+  margin-top: 160rpx;
+}
+.wechat-text{
+font-size: 48rpx;
+font-family: pingFang-Regular;
+color: white;
+}
+.goback{
+  font-size: 30rpx;
+  font-family: pingFang-Regular;
+  margin-top: 54rpx;
+  color: #a4a4a4;
+}

@@ -1,0 +1,111 @@
+<block wx:if="{{tiaowenvalue =='' && notevalue ==''}}">
+  <view class="container_no">
+    <view class="loading_box">
+      <view class="loading1">
+        <view class="loading_item1"></view>
+        <view class="loading_item2"></view>
+        <view class="loading_item3"></view>
+        <view class="loading_item4"></view>
+        <view class="loading_item5"></view>
+      </view>
+      <view class="loading_text">加载中...</view>
+    </view>
+  </view>
+</block>
+<block wx:else>
+  <view class="container">
+    <view class="law">
+      <view class="border">
+        <view class="tip">法律条款</view>
+      </view>
+      <scroll-view scroll-y="true" class="content_text">
+        <block wx:for="{{tiaowenvalue}}" wx:key="index">
+          <view class="text">{{item}}</view>
+        </block>
+      </scroll-view>
+    </view>
+    <view class="about_law">
+      <view class="function_area">
+        <block wx:if="{{zhushi}}">
+          <view class="border_func">
+            <view class="tip">注解</view>
+          </view>
+        </block>
+        <block wx:else>
+          <view class="border_func_a" bindtap="tozhushi">
+            <view class="tip_b">注解</view>
+          </view>
+        </block>
+        <block wx:if="{{guanlian}}">
+          <view class="border_func_b">
+            <view class="tip">关联</view>
+          </view>
+        </block>
+        <block wx:else>
+          <view class="border_funcb_b" bindtap="toguanlian">
+            <view class="tip_b">关联</view>
+          </view>
+        </block>
+        <block wx:if="{{shoucang}}">
+          <view class="collect_bef" bindtap="toshoucang">
+            <image class="collect_image_a" src="../../images/shoucang_yes.png"></image>
+          </view>
+        </block>
+        <block wx:else>
+          <view class="collect_bef" bindtap="toshoucang">
+            <image class="collect_image_b" src="../../images/shoucang_no.png"></image>
+          </view>
+        </block>
+        <block wx:if="{{loadings}}">
+          <view class="load">
+            <view class="load_text">加载中...</view>
+          </view>
+        </block>
+        <block wx:elif="{{onplays}}">
+          <view class="load" bindtap="on_play">
+            <view class="load_text">法条语音</view>
+          </view>
+        </block>
+        <block wx:else>
+          <view class="load" bindtap="stop_play">
+            <image class="stop_play" src="../../images/on_play.png"></image>
+          </view>
+        </block>
+        <block wx:if="{{zh_loading}}">
+          <view class="load">
+            <view class="load_text">加载中...</view>
+          </view>
+        </block>
+        <block wx:elif="{{zh_onplay}}">
+          <view class="load" bindtap="onzh_play">
+            <view class="load_text">注解语音</view>
+          </view>
+        </block>
+        <block wx:else>
+          <view class="load" bindtap="stopzh_play">
+            <image class="stop_play" src="../../images/on_play.png"></image>
+          </view>
+        </block>
+      </view>
+      <block wx:if="{{nothing}}">
+        <view class="content_text3">
+          <view class="nothing">暂无相关内容！</view>
+        </view>
+      </block>
+      <block wx:else>
+        <scroll-view scroll-y="true" class="content_text2">
+          <block wx:if="{{zhushi == true}}">
+            <block wx:for="{{notevalue}}" wx:key="index">
+              <view class="text">{{item}}</view>
+            </block>
+          </block>
+          <block wx:if="{{guanlian == true}}">
+            <block wx:for="{{relatedvalue}}" wx:key="index">
+              <view class="text">{{item}}</view>
+            </block>
+          </block>
+        </scroll-view>
+      </block>
+    </view>
+  </view>
+</block>

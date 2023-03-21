@@ -1,0 +1,53 @@
+<block wx:if="{{loading}}">
+  <view class="container_no">
+    <view class="loading_box">
+      <view class="loading1">
+        <view class="loading_item1"></view>
+        <view class="loading_item2"></view>
+        <view class="loading_item3"></view>
+        <view class="loading_item4"></view>
+        <view class="loading_item5"></view>
+      </view>
+      <view class="loading_text">加载中...</view>
+    </view>
+  </view>
+</block>
+<block wx:else>
+  <view class="container">
+    <view class="kinds">
+      <view class="left-kind" wx:if="{{chooselaw}}">
+        <view class="lawlist">收藏的条文({{collectlawlist.length}})</view>
+      </view>
+      <view class="left-kind" wx:else>
+        <view class="lawlist-before" bindtap="tolaw">收藏的条文({{collectlawlist.length}})</view>
+      </view>
+      <view class="left-kind" wx:if="{{choosequestion}}">
+        <view class="lawlist">收藏的问题({{collectquestionlist.length}})</view>
+      </view>
+      <view class="left-kind" wx:else>
+        <view class="lawlist-before" bindtap="toquestion">收藏的问题({{collectquestionlist.length}})</view>
+      </view>
+    </view>
+    <view class="no_ues"></view>
+    <block wx:if="{{chooselaw == true}}">
+      <block wx:for="{{collectlawlist}}" wx:key="index">
+        <view class="tiaowencard" bindtap="totiaoW" data-id="{{item._id}}">
+          <view class="card-text">{{item.lawnum}}</view>
+          <view class="card-title">{{item.title}}</view>
+          <image src="../../images/reading.png" class="card-image"></image>
+        </view>
+      </block>
+    </block>
+    <block wx:if="{{choosequestion == true}}">
+      <block wx:for="{{collectquestionlist}}" wx:key="index">
+        <view class="tiaowencard" data-id="{{item._id}}" bindtap="toquestionL">
+          <view class="card-text2">{{item.title}}</view>
+          <image src="../../images/question.png" class="card-image2"></image>
+        </view>
+      </block>
+    </block>
+    <block wx:if="{{nothing}}">
+      <image src="../../images/noword.png" class="noword"></image>
+    </block>
+  </view>
+</block>

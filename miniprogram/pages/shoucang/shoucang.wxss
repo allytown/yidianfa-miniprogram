@@ -1,0 +1,92 @@
+/* pages/shoucang/shoucang.wxss */
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+.kinds{
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 750rpx;
+  height: 88rpx;
+  background-color: white;
+  border-top: 1px solid #e5e5e5;
+}
+.no_ues{
+  height: 88rpx;
+  width: 100%;
+}
+.left-kind{
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.lawlist-before{
+  font-family: pingFang-Medium;
+  font-size: 28rpx;
+  color: rgb(138, 138, 138);
+}
+.lawlist{
+  font-family: pingFang-Medium;
+  font-size: 30rpx;
+  color: rgb(222, 41, 16);
+}
+.tiaowencard{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20rpx;
+  width: 690rpx;
+  height: 134rpx;
+  border-radius: 10rpx;
+  background:-webkit-linear-gradient(top,#3a7bd5,#00d2ff);
+}
+.card-text{
+  width: 120rpx;
+  font-family: pingFang-Medium;
+  font-size: 24rpx;
+  color: white;
+  margin-left: 30rpx;
+}
+.card-title{
+  font-family: pingFang-Medium;
+  margin-left: 20rpx;
+  width: 340rpx;
+  font-size: 24rpx;
+  color: white;
+
+}
+.card-image{
+  margin-left: 16rpx;
+  width: 148rpx;
+  height: 108rpx;
+}
+.card-text2{
+  width: 404rpx;
+  font-size: 24rpx;
+  color: white;
+  margin-left: 20rpx;
+  width: 500rpx;
+}
+.card-image2{
+  margin-left: 10rpx;
+  width: 138rpx;
+  height: 102rpx;
+}
+.noword{
+  width: 454rpx;
+  height: 456rpx;
+  margin-top: 316rpx;
+}
+.tip{
+  color: #8a8a8a;
+  font-size: 28rpx;
+  margin-top: 20rpx;
+  margin-bottom: 10rpx;
+}

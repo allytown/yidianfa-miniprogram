@@ -1,0 +1,52 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+}
+.weather{
+  margin-top: 60rpx;
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  width: 92vw;
+  height: 152rpx;
+  border-radius: 20rpx;
+  border: 2rpx solid #eb3349;
+  box-shadow: 0 2px 6px #ccc;
+}
+.weather_text{
+  margin-left: 150rpx;
+  font-family: pingFang-Bold;
+  font-size: 36rpx;
+}
+.api{
+  margin-left: 150rpx;
+  font-family: pingFang-Regular;
+  font-size: 24rpx;
+  color: #888888;
+}
+.box{
+  width: 100vw;
+  height: 484rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.he_img{
+  margin-left: 30rpx;
+  width: 100rpx;
+  height: 100rpx;
+}
+.bai_image{
+  margin-left: 30rpx;
+  width: 100rpx;
+  height: 100rpx;
+}
+.hhh{
+  display: flex;
+  flex-direction: column;
+}

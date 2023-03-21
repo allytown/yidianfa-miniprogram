@@ -1,0 +1,114 @@
+{
+  "setting": {
+    "compileHotReLoad": true
+  },
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "db guide",
+          "pathName": "pages/databaseGuide/databaseGuide",
+          "query": ""
+        },
+        {
+          "name": "pages/tiaowenkind/tiaowenkind",
+          "pathName": "pages/tiaowenkind/tiaowenkind",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/tiaowenline/tiaowenline",
+          "pathName": "pages/tiaowenline/tiaowenline",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/tiaowen/tiaowen",
+          "pathName": "pages/tiaowen/tiaowen",
+          "query": "id=5b00f970605b1ad50271696d1735e378",
+          "scene": null
+        },
+        {
+          "name": "pages/login/login",
+          "pathName": "pages/login/login",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/my/my",
+          "pathName": "pages/my/my",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/shoucang/shoucang",
+          "pathName": "pages/shoucang/shoucang",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/toy/toy",
+          "pathName": "pages/toy/toy",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/toyindex/toyindex",
+          "pathName": "pages/toyindex/toyindex",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/questionkind/questionkind",
+          "pathName": "pages/questionkind/questionkind",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/questionline/questionline",
+          "pathName": "pages/questionline/questionline",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/question/question",
+          "pathName": "pages/question/question",
+          "query": "id=3f1780f46040d761026f2ef37b5e092a",
+          "scene": null
+        },
+        {
+          "name": "pages/tiaowen/tiaowen",
+          "pathName": "pages/tiaowen/tiaowen",
+          "query": "id=21b0ed08606c43db003da6e2652ec9c4",
+          "scene": null
+        },
+        {
+          "name": "pages/tiku/tiku",
+          "pathName": "pages/tiku/tiku",
+          "query": "id=67113b3a602fe227000d2c0e1b7384fa",
+          "scene": null
+        },
+        {
+          "name": "pages/bannerindex/bannerindex",
+          "pathName": "pages/bannerindex/bannerindex",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/api/api",
+          "pathName": "pages/api/api",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "id=21b0ed08606c43db003da6e2652ec9c4",
+          "scene": null
+        }
+      ]
+    }
+  },
+  "description": "项目私有配置文件。此文件中的内容将覆盖 project.config.json 中的相同字段。项目的改动优先同步到此文件中。详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html",
+  "projectname": "yidianfa"
+}

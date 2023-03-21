@@ -1,0 +1,128 @@
+/* pages/question/question.wxss */
+.container{
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f5f5f5;
+}
+.question_box{
+  margin-top: 2vh;
+  width: 92vw;
+  height: 34vh;
+  border-radius: 40rpx;
+  background-color: white;
+  box-shadow: 0 2px 6px #cccccc;
+}
+.answer_box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2vh;
+  width: 92vw;
+  height: 60vh;
+  background-color: white;
+  border-radius: 40rpx;
+  box-shadow: 0 2px 6px #cccccc;
+}
+.border{
+  width: 76rpx;
+  height: 40rpx;
+  margin-left: 40rpx;
+  display: flex;
+  margin-top: 20rpx;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2rpx solid #eb3349;
+}
+.border_b{
+  width: 76rpx;
+  height: 40rpx;
+  margin-left: 40rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2rpx solid #eb3349;
+}
+.tip{
+  color: #eb3349;
+  font-size: 36rpx;
+  font-family: pingFang-Medium;
+}
+.question{
+  font-family: fangzhengkaiti;
+  text-align: justify;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  font-size: 36rpx;
+  width: 650rpx;
+  height: 26vh;
+}
+.function_border{
+  margin-top: 20rpx;
+  height: 55rpx;
+  width: 92vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.collect_bef{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 202rpx;
+  width: 55rpx;
+  height: 55rpx;
+  border-radius: 100%;
+  background-color: black;
+  opacity: 0.5;
+}
+.collect_image_a{
+  width: 39rpx;
+  height: 36rpx;
+}
+.collect_image_b{
+  width: 39rpx;
+  height: 36rpx;
+}
+.load{
+  margin-left: 128rpx;
+  width: 150rpx;
+  height: 44rpx;
+  border-radius: 10rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  opacity: 0.5;
+}
+.load_text{
+  font-size: 36rpx;
+  color: white;
+  font-family:pingFang-Medium;
+}
+.stop_play{
+  width: 40rpx;
+  height: 40rpx;
+}
+.answser_text{
+  margin-top: 20rpx;
+  width: 650rpx;
+  height: 51vh;
+}
+.answser_text2{
+  font-family: fangzhengkaiti;
+  text-align: justify;
+  text-indent: 72rpx;
+  font-size: 36rpx;
+}
+::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+  color: transparent;
+}

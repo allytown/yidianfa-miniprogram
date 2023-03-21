@@ -1,0 +1,26 @@
+<block wx:if="{{tiaowenlinelist==''}}">
+  <view class="container_no">
+    <view class="loading_box">
+      <view class="loading1">
+        <view class="loading_item1"></view>
+        <view class="loading_item2"></view>
+        <view class="loading_item3"></view>
+        <view class="loading_item4"></view>
+        <view class="loading_item5"></view>
+      </view>
+      <view class="loading_text">加载中...</view>
+    </view>
+  </view>
+</block>
+<block wx:else>
+  <view class="container">
+    <block wx:for="{{tiaowenlinelist}}" wx:key="index">
+      <view class="tiaowencard" data-id="{{item._id}}" bindtap="totiaowen">
+        <view class="card-text">{{item.lawnum}}</view>
+        <view class="card-title">{{item.title}}</view>
+        <image src="../../images/reading.png" class="card-image"></image>
+      </view>
+    </block>
+    <view class="tip">---没有更多内容---</view>
+  </view>
+</block>

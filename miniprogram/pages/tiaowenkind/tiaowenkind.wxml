@@ -1,0 +1,48 @@
+<block wx:if="{{tiaowenlist==''}}">
+  <view class="container_no">
+    <view class="loading_box">
+      <view class="loading1">
+        <view class="loading_item1"></view>
+        <view class="loading_item2"></view>
+        <view class="loading_item3"></view>
+        <view class="loading_item4"></view>
+        <view class="loading_item5"></view>
+      </view>
+      <view class="loading_text">加载中...</view>
+    </view>
+  </view>
+</block>
+<block wx:else>
+  <view class="container">
+    <view class="searchbox">
+      <view class="search-bg">
+        <image class="search-image" src="../../images/search.png"></image>
+        <input type="text" class="search-input" value="{{input}}" placeholder="请输入关键字" bindinput="searchvalue" />
+        <block wx:if="{{searchvalue !==''}}">
+          <image class="search-back" src="../../images/back.png" bindtap="goback"></image>
+        </block>
+      </view>
+    </view>
+    <block wx:if="{{searchvalue.length !==0}}">
+      <view class="ontime">
+        <view class="ontime-text">搜索“{{searchvalue}}”</view>
+      </view>
+      <block wx:for="{{searchlist}}" wx:key="index">
+        <view class="searchres" data-id="{{item._id}}" bindtap="tolawline">
+          <image src="../../images/search.png" class="searchres-image"></image>
+          <view class="searchres-text">{{item.lawnum}} {{item.title}}</view>
+        </view>
+      </block>
+    </block>
+    <block wx:else>
+      <block wx:for="{{tiaowenlist}}" wx:key="index">
+        <view class="kindsvalue" data-code="{{item.code}}" bindtap="totiaowenline">
+          <view class="kindsvalue-text">{{item.group}}</view>
+          <image class="kindsvalue-image" src="../../images/searchvalue.png"></image>
+          <view class="kindsvalue-count">共计{{item.count}}条</view>
+        </view>
+      </block>
+      <view class="tip">---没有更多内容---</view>
+    </block>
+  </view>
+</block>

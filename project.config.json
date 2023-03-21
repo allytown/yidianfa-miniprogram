@@ -1,0 +1,150 @@
+{
+  "miniprogramRoot": "miniprogram/",
+  "cloudfunctionRoot": "cloudfunctions/",
+  "setting": {
+    "urlCheck": false,
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "preloadBackgroundData": false,
+    "minified": true,
+    "newFeature": true,
+    "coverView": true,
+    "nodeModules": true,
+    "autoAudits": false,
+    "showShadowRootInWxmlPanel": true,
+    "scopeDataCheck": false,
+    "uglifyFileName": true,
+    "checkInvalidKey": true,
+    "checkSiteMap": true,
+    "uploadWithSourceMap": true,
+    "compileHotReLoad": false,
+    "useMultiFrameRuntime": true,
+    "useApiHook": true,
+    "useApiHostProcess": true,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "useIsolateContext": true,
+    "userConfirmedBundleSwitch": false,
+    "packNpmManually": false,
+    "packNpmRelationList": [],
+    "minifyWXSS": true,
+    "disableUseStrict": false,
+    "minifyWXML": true,
+    "showES6CompileOption": false,
+    "useCompilerPlugins": false,
+    "ignoreUploadUnusedFiles": true,
+    "useStaticServer": true
+  },
+  "appid": "wx50356ed0f1fb1483",
+  "projectname": "yidianfa",
+  "libVersion": "2.19.4",
+  "cloudfunctionTemplateRoot": "cloudfunctionTemplate/",
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "id": -1,
+          "name": "db guide",
+          "pathName": "pages/databaseGuide/databaseGuide",
+          "query": ""
+        },
+        {
+          "name": "pages/tiaowenkind/tiaowenkind",
+          "pathName": "pages/tiaowenkind/tiaowenkind",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/tiaowenline/tiaowenline",
+          "pathName": "pages/tiaowenline/tiaowenline",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/tiaowen/tiaowen",
+          "pathName": "pages/tiaowen/tiaowen",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/login/login",
+          "pathName": "pages/login/login",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/my/my",
+          "pathName": "pages/my/my",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/shoucang/shoucang",
+          "pathName": "pages/shoucang/shoucang",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/toy/toy",
+          "pathName": "pages/toy/toy",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/toyindex/toyindex",
+          "pathName": "pages/toyindex/toyindex",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/questionkind/questionkind",
+          "pathName": "pages/questionkind/questionkind",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/questionline/questionline",
+          "pathName": "pages/questionline/questionline",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/question/question",
+          "pathName": "pages/question/question",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/tiaowen/tiaowen",
+          "pathName": "pages/tiaowen/tiaowen",
+          "query": "id=67113b3a602fe227000d2c0e1b7384fa",
+          "scene": null
+        }
+      ]
+    }
+  },
+  "compileType": "miniprogram",
+  "srcMiniprogramRoot": "miniprogram/",
+  "packOptions": {
+    "ignore": [],
+    "include": []
+  },
+  "editorSetting": {
+    "tabIndent": "insertSpaces",
+    "tabSize": 2
+  },
+  "description": "项目配置文件，详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html"
+}

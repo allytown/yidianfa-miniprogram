@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/my/my",
+    "pages/tiaowenkind/tiaowenkind",
+    "pages/tiaowenline/tiaowenline",
+    "pages/tiaowen/tiaowen",
+    "pages/shoucang/shoucang",
+    "pages/toy/toy",
+    "pages/toyindex/toyindex",
+    "pages/questionkind/questionkind",
+    "pages/questionline/questionline",
+    "pages/question/question",
+    "pages/bannerindex/bannerindex",
+    "pages/aboutus/aboutus",
+    "pages/api/api"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "一典法",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#de2910",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/shouye.png",
+        "selectedIconPath": "images/shouye1.png",
+        "text": "主页"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "images/my.png",
+        "selectedIconPath": "images/my1.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

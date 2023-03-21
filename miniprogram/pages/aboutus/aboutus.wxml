@@ -1,0 +1,21 @@
+<block wx:if="{{content ==''}}">
+  <view class="container_no">
+    <view class="loading_box">
+      <view class="loading1">
+        <view class="loading_item1"></view>
+        <view class="loading_item2"></view>
+        <view class="loading_item3"></view>
+        <view class="loading_item4"></view>
+        <view class="loading_item5"></view>
+      </view>
+      <view class="loading_text">加载中...</view>
+    </view>
+  </view>
+</block>
+<block>
+  <view class="container">
+    <scroll-view scroll-y="ture" class="content">
+      <image mode="widthFix" class="content_image" src="{{content.image_id}}"></image>
+    </scroll-view>
+  </view>
+</block>
